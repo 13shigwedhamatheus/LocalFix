@@ -189,6 +189,25 @@ html{
         font-size: 1.2rem;
     }
 }
+@media (max-width:800px) {
+    #hero{
+        nav{
+            ul{
+                li{
+                    display: none;
+                }
+            }
+        }
+        main{
+            section{
+                text-align: center;
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+            }
+        }
+    }
+}
 @keyframes fade_In {
     from{
         transform: translateX(-100px);
