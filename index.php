@@ -61,6 +61,15 @@
                         <p class='price'>Budget: $".htmlspecialchars($row['budget'])."</p>
                         <small>Contact: ".htmlspecialchars($row['contact'])."</small>
                       </div>";
+                      // Inside your while loop in index.php
+                echo "<div class='card'>
+                        <h3>".htmlspecialchars($row['title'])."</h3>
+                        <p>".htmlspecialchars($row['description'])."</p>
+                        <p class='price'>Budget: $".htmlspecialchars($row['budget'])."</p>
+                        <a href='generate_pdf.php?id=".$row['id']."' target='_blank'>
+                            <button style='background: #28a745;'>Download PDF Quote</button>
+                        </a>
+                    </div>";
             }
         } else {
             echo "<p>No tasks posted yet. Be the first!</p>";

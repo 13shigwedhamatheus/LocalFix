@@ -4,9 +4,12 @@ $user = "root";
 $pass = "";
 $dbname = "campus_db";
 
+$conn = new mysqli($host, $user, $pass, $dbname);
+
 if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
-}else {
-    $conn = new mysqli($host, $user, $pass, $dbname);
 }
+
+// Optional: set charset
+$conn->set_charset('utf8mb4');
 ?>
