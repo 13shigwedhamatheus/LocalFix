@@ -24,8 +24,22 @@
             <label>Estimated Hours:</label>
             <input type="number" id="hours" placeholder="10">
 
-            <button type="button" onclick="generatePDF()">Download Quote (PDF)</button>
+            <label>Quote Reference #:</label>
+            <input type="text" id="quoteNum" value="QT-2026-001">
+
+            <label>Client Email:</label>
+            <input type="email" id="clientEmail" placeholder="client@company.com">
+
+            <label>Validity Period:</label>
+            <select id="validity">
+                <option value="15 Days">15 Days</option>
+                <option value="30 Days">30 Days</option>
+                <option value="60 Days">60 Days</option>
+            </select>
+
+            <button type="button" onclick="generatePDF()" title="Download PDF ">Download Quote (PDF)</button>
         </form>
+        <button onclick="window.location.href='index.html'" title="Return to Home Page">Back to Home</button>
     </div>
 
     <script src="index.js"></script>
