@@ -1,6 +1,6 @@
 body {
     font-family: Arial, sans-serif;
-    background: linear-gradient(to top, rgba(0,0,0,0.7) 50%, rgba(0,0,0,7) 50%),url("autumn-leaves-composition.jpg");
+    background: linear-gradient(to top, rgba(0,0,0,7) 50%, rgba(0,0,0,7) 50%),url("autumn-leaves-composition.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
