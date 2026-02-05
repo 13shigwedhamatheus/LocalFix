@@ -11,9 +11,9 @@ function generatePDF() {
     const total = (rate * hours).toFixed(2);
 
     // 2. Add Header Info
-    doc.setFontSize(30);
+    doc.setFontSize(15);
     doc.setTextColor(40);
-    doc.text("LOCALFIX", 14, 5);
+    doc.text("LOCALFIX", 14, 10);
 
     doc.setFontSize(22);
     doc.setTextColor(40);
