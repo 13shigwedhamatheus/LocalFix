@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Quote Generator</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+</head>
+<body>
+
+    <div class="container">
+        <h2>Project Quotation Generator</h2>
+        <form id="quoteForm">
+            <label>Client Name:</label>
+            <input type="text" id="clientName" placeholder="e.g. John Doe" required>
+
+            <label>Task/Project Description:</label>
+            <textarea id="taskDesc" placeholder="Describe the work..." required></textarea>
+
+            <label>Hourly Rate ($):</label>
+            <input type="number" id="rate" value="50">
+
+            <label>Estimated Hours:</label>
+            <input type="number" id="hours" value="10">
+
+            <button type="button" onclick="generatePDF()">Download Quote (PDF)</button>
+        </form>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
