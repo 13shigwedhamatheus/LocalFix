@@ -94,7 +94,7 @@ function generatePDF() {
             startY: 90,
             head: [['Service Description', 'Qty/Hrs', 'Unit Price', 'Subtotal']],
             body: [
-                [task, hours, `$${rate}`, `$${total}`]
+                [task, hours, `N$${rate}`, `N$${total}`]
             ],
             theme: 'grid',
             headStyles: { fillColor: [44, 62, 80], textColor: [255, 255, 255] },
@@ -105,7 +105,7 @@ function generatePDF() {
         let finalY = doc.lastAutoTable.finalY + 15;
         
         doc.setFont("helvetica", "bold");
-        doc.text(`TOTAL AMOUNT DUE: $${total}`, 14, finalY);
+        doc.text(`TOTAL AMOUNT DUE: N$${total}`, 14, finalY);
         
         finalY += 20;
         doc.setFontSize(9);
