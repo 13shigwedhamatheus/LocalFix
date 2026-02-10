@@ -73,9 +73,10 @@ function generatePDF() {
         // Business Info (Your details)
         doc.setFontSize(10);
         doc.setTextColor(100);
-        doc.text("LOCALFIX.INC", 140, 20);
-        doc.text("666 Creative Street, Tech City", 140, 25);
-        doc.text("Email: hello@localfix.com", 140, 30);
+        doc.text("TEKKIE TRADING CC", 140, 20);
+        doc.text("PORTION 190, KAMANJAB TOWN OPUWO MAIN ROAD", 140, 25);
+        doc.text("Cell: 081 220 6204", 140, 30);
+        doc.text("Email: takkieadmn@gmail.com", 140, 35);
 
         // Quote & Client Info
         doc.setTextColor(0);
