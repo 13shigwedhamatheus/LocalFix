@@ -180,6 +180,11 @@ html{
             transition: all 0.3s ease-in-out;
             scale: 0.98;
     }
+    #about-footer{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
 }
 }
 #footer-section{
