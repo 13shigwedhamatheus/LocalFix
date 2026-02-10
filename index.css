@@ -168,6 +168,11 @@ html{
                 text-align: left;
                 text-spacing-trim: space-all;
             }
+            li{
+                color: hsl(0, 0%, 60%);
+                text-align: left;
+                text-spacing-trim: space-all;
+            }
         }
         .card:hover{
             box-shadow: 0 4px 10px hsl(0, 0%, 3%);
