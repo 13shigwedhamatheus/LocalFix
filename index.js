@@ -68,15 +68,16 @@ function generatePDF() {
         // --- Header Section ---
         doc.setFontSize(24);
         doc.setTextColor(33, 37, 41);
-        doc.text("QUOTATION", 14, 25);
+        doc.text("TEKKIE TRADING CC", 14, 25);
 
         // Business Info (Your details)
         doc.setFontSize(10);
         doc.setTextColor(100);
         doc.text("TEKKIE TRADING CC", 140, 20);
-        doc.text("PORTION 190, KAMANJAB TOWN OPUWO MAIN ROAD", 140, 25);
-        doc.text("Cell: 081 220 6204", 140, 30);
-        doc.text("Email: takkieadmn@gmail.com", 140, 35);
+        doc.text("PORTION 190, KAMANJAB TOWN,", 140, 25);
+        doc.text("OPUWO MAIN ROAD",140,30)
+        doc.text("Cell: 081 220 6204", 140, 35);
+        doc.text("Email: takkieadmn@gmail.com", 140, 40);
 
         // Quote & Client Info
         doc.setTextColor(0);
