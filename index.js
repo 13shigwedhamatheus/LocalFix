@@ -47,6 +47,27 @@ function generatePDF() {
     // 5. Save
     doc.save(`Quote_${client.replace(/\s+/g, '_')}.pdf`);
 }*/
+function toggleMenu() {
+    const nav = document.querySelector('nav');
+    const menu = document.querySelector('ul');
+    if (menu.style.display === 'grid') {
+        menu.style.display = 'none';
+        nav.style.flexDirection = 'row';
+    } else {
+        menu.style.display = 'grid';
+        nav.style.flexDirection = 'column';
+    }
+}
+function closeMenu() {
+    const nav = document.querySelector('nav');
+    const menu = document.querySelector('ul');
+
+    menu.style.display = 'none';
+    nav.style.flexDirection = 'row';
+}
+
+
+
 window.jsPDF = window.jspdf.jsPDF;
 
 function generatePDF() {

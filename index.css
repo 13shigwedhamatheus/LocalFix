@@ -69,6 +69,11 @@ html{
                 border-radius: 5px;
             }
         }
+        .fa-solid{
+            display: none;
+            font-size: 1.5rem;
+            cursor: pointer;
+        }
     }
     main{
         height: calc(100vh - 70px);
@@ -314,10 +319,22 @@ html{
 @media (max-width:800px) {
     #hero{
         nav{
+            display: flex;
+            justify-content: space-between;
+            padding: 1em;
+
+            h1{
+                font-size: 1.5rem;
+            }
             ul{
-                li{
-                    display: none;
-                }
+                display: none;
+                background: hsl(0, 0%, 25%);
+                padding: 20px;
+                border-radius: 10px;
+                margin-bottom: 10px;
+            }
+            .fa-solid{
+                display: block;
             }
         }
         main{

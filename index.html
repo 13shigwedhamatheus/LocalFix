@@ -8,20 +8,21 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
     <title>TEKKIE TRADING CC | Home</title>
 </head>
-<body>
+<body onload="closeMenu()" >
     <div id="hero">
         <nav>
             <div class="logo">
                 <h1>TEKKIE TRADING CC</h1>
             </div>
             <ul>
-                <a href="quote.html" title="Fix It Now!"><li>Quote Now!</li></a>
-                <a href="#about-section" title="About LocalFix"><li>TEKKIE TRADING CC</li></a>
-                <a href="#footer-section" title="Contact Us"><li>Contact Us</li></a>
-                <a href="TEKKIE TRADING PROFILE.pdf" download="TEKKIE TRADING PROFILE.pdf" title="Download Our Company Profile"><li>Company Profile</li></a>
+                <a href="quote.html" onclick="closeMenu()" title="Fix It Now!"><li>Quote Now!</li></a>
+                <a href="#about-section" onclick="closeMenu()" title="About LocalFix"><li>TEKKIE TRADING CC</li></a>
+                <a href="#footer-section" onclick="closeMenu()" title="Contact Us"><li>Contact Us</li></a>
+                <a href="TEKKIE TRADING PROFILE.pdf" onclick="closeMenu()" download="TEKKIE TRADING PROFILE.pdf" title="Download Our Company Profile"><li>Company Profile</li></a>
             </ul>
+            <i class="fa-solid fa-bars" onclick="toggleMenu()"></i>
         </nav>
-        <main>
+        <main onclick="closeMenu()">
             <h1>Welcome to TEKKIE TRADING CC</h1>
             <p>"Post a Task, Consider it Done."</p>
 
@@ -140,7 +141,9 @@
                 <h4><strong>Email:</strong></h4>
                 <a href="https://www.tekkieadmn@gmail.com"><p>tekkieadmn@gmail.com</p></a>
             </section>
+            <small style="font-size: 7px;">CREATED BY SHIGWEDHA E.E MATHEUS</small>
         </footer>
     </div>
+    <script src="index.js"></script>
 </body>
 </html>
