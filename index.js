@@ -58,13 +58,13 @@ function toggleMenu() {
         nav.style.flexDirection = 'column';
     }
 }
-function closeMenu() {
+/*function closeMenu() {
     const nav = document.querySelector('nav');
     const menu = document.querySelector('ul');
 
     menu.style.display = 'none';
     nav.style.flexDirection = 'row';
-}
+}*/
 
 
 
